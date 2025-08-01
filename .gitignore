@@ -1,20 +1,17 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-env/
-venv/
-.venv/
+*.py[codz]
 
-# OS
-.DS_Store
+# Environments
+.env
+.venv/
+venv/
+env/
 
 # VS Code
 .vscode/
 
-# Audio
+# Audio files
 *.m4a
 *.mp3
 *.wav
-*.ogg
