@@ -2,7 +2,7 @@
 
 This repository contains the prototype implementation for the paper:
 
-**“A Voice-Driven Requirements Elicitation Tool with Gated Human-Centric Classification for Safety-Critical Systems.”**
+**“A Voice-Driven Requirements Elicitation Tool with Real-Time Classification & Human-Centric Overlay: Proposed for Safety-Critical Systems”**
 
 The tool demonstrates a real-time pipeline for capturing spoken stakeholder requirements, segmenting them into clause-level units, and classifying them using a transformer-based FR/NFR classifier with a gated human-centric (HCR) overlay.
 
@@ -19,7 +19,7 @@ It is **not intended as a production-ready system**, nor is it expected to run o
 
 ### Runtime Pipeline
 - `tool_interface.py`  
-  Gradio-based user interface for live sessions and requirement visualization.
+  Gradio-based user interface for live sessions and requirement visualization --> this file is ran to open the tool.
   
 - `main_stream.py`  
   Streaming speech-to-text orchestration, turn stabilization, clause segmentation, and inference flow.
