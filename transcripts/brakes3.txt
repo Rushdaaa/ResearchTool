@@ -1,2 +1,0 @@
-The car should automatically break when something gets in front of it or an
-obstruction is faced.
