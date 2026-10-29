@@ -1,0 +1,13 @@
+assemblyai
+python-dotenv
+vaderSentiment
+sentence-transformers
+scikit-learn
+numpy
+pandas
+spacy
+torch
+transformers
+gramformer
+pyAudioAnalysis
+joblib

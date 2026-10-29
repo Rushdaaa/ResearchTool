@@ -1,17 +1,36 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[codz]
 
-# Environments
+# Virtual environments
 .env
 .venv/
 venv/
 env/
 
-# VS Code
-.vscode/
+# Secrets / local configuration
+code/config.py
+code/utilities/.env
 
-# Audio files
+# IDE
+.vscode/
+.idea/
+
+# Audio
 *.m4a
 *.mp3
 *.wav
+
+# Generated project/session data
+data/projects/
+
+# Training checkpoints
+models/distilbert_frnfr/checkpoint-*/
+
+# Archives / backups
+archived/
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db

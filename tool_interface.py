@@ -208,7 +208,7 @@ def save_final_requirements(project_id: str, items: list[dict]) -> Path:
 
 
 # ------------------------------
-# Pretty rendering (chips + cards)
+# Rendering (chips + cards)
 # ------------------------------
 def chips_html(items: list[str]) -> str:
     if not items:
@@ -445,11 +445,11 @@ def ui_delete_project(project_dropdown_value):
 def ui_rename_project(project_dropdown_value, new_name):
     pid = parse_project_id(project_dropdown_value)
     if not pid:
-        return gr.update(), "⚠️ Select a project first.", gr.update(value="")
+        return gr.update(), "Select a project first.", gr.update(value="")
 
     ok = rename_project(pid, new_name)
     if not ok:
-        return gr.update(), "⚠️ Enter a valid project name.", gr.update(value="")
+        return gr.update(), "Enter a valid project name.", gr.update(value="")
 
     # refresh dropdown, keep same project selected
     projects = list_projects()
@@ -543,11 +543,11 @@ def ui_rename_session_step1(project_dropdown_value, session_dropdown_value, new_
     sid = parse_session_id(session_dropdown_value)
 
     if not pid or not sid:
-        return gr.update(), "⚠️ Select a session first.", gr.update(value=""), None
+        return gr.update(), "Select a session first.", gr.update(value=""), None
 
     ok = rename_session(pid, sid, new_title)
     if not ok:
-        return gr.update(), "⚠️ Enter a valid session name.", gr.update(value=""), None
+        return gr.update(), "Enter a valid session name.", gr.update(value=""), None
 
     # Step 1: refresh choices but CLEAR selection to force UI repaint
     dd_clear = ui_list_sessions(project_dropdown_value, keep_value=None)

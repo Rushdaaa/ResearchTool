@@ -1,0 +1,6 @@
+** Overview and Goals ** 
+The goal of this project is to develop an intelligent, voice-driven tool to assist in requirements elicitation for software development, 
+specifically focusing on classifying requirements into functional, non-functional, and human-centric categories. The tool processes live 
+spoken input, transcribes it to text, and applies natural language processing (NLP) techniques for semantic classification and sentiment 
+analysis, aiming to capture the tone and emotion behind stakeholder statements to improve understanding.
+

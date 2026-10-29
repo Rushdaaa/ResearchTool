@@ -4,10 +4,10 @@ Voice-driven requirements capture (streaming) with live classification.
 Pipeline:
   Mic → AssemblyAI streaming → final, formatted turns only →
   clause split → DistilBERT FR/NFR → HCR gate (LR on SBERT) →
-  HCR subtags (RF multilabel) → pretty print
+  HCR subtags (RF multilabel) → neat print
 
 Notes:
-- No retraining. Loads your saved models from ../models.
+- Loads saved models from ../models.
 - Classifies only final turns to reduce flicker/noise.
 - Minimal built-in clause splitter to avoid external utilities.
 """
@@ -88,7 +88,7 @@ def classify_text_clause(clause: str) -> dict:
       - DistilBERT FR/NFR
       - HCR gate
       - HCR subtags if gate passes
-    Returns a dict you can log/serialize.
+    Returns a dict that can be logged/serialized.
     """
     fr_label, fr_conf = frnfr_predict(clause)
     p_hcr = hcr_gate_probability(clause)
